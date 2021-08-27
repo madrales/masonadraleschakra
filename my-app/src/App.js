@@ -9,19 +9,16 @@ import {
   Grid,
   theme,
 } from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Logo } from './Logo';
 import WithSubnavigation, { DesktopNav} from './components/Navbar';
 import SmallWithSocial from './components/Footer';
-import CallToActionWithVideo from './components/HeroImage';
 import ProductSimple from './components/ProjectCard';
+import SplitScreen from './components/HeroImage';
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
       <WithSubnavigation/>
-      <CallToActionWithVideo/>
-      <ProductSimple/>
+      <SplitScreen/>
       <SmallWithSocial/>
     </ChakraProvider>
   );
